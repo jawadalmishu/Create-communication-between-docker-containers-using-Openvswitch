@@ -1094,27 +1094,35 @@ The VXLAN tunneling is working. We can reach the other host’s docker conatiner
 Please look up the output figure of ping command
 
 - ping from docker1 to docker3
+  
   ![ping from docker1 to docker3-100% passed](img/16.png)
   
 - ping from docker1 to docker1(self)
+  
   ![ping from docker1 to docker1(self)-100% passed](img/17.png)
   
 - ping from docker1 to docker2
+  
   ![ping from docker1 to docker2-100% failed](img/18.png)
   
 - ping from docker1 to docker4
+  
   ![ping from docker1 to docker4](img/19.png)
   
 - ping from docker2 to docker2(self)
+  
   ![ping from docker2 to docker2(self)-100% passed](img/20.png)
   
 - ping from docker2 to docker4
+  
   ![ping from docker2 to docker4-100% passed](img/21.png)
   
 - ping from docker2 to docker1
+  
    ![ping from docker2 to docker1-100% failed](img/22.png)
   
 - ping from docker2 to docker3
+  
   ![ping from docker2 to docker3-100% failed](img/23.png)
   
 
