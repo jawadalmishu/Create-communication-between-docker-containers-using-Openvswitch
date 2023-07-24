@@ -47,6 +47,8 @@ Docker is an open-source platform that allows you to automate the deployment, sc
 OpenvSwitch (Open vSwitch or OVS) is an open-source, multi-layer software switch that is designed to enable network automation, virtualization, and SDN (Software-Defined Networking). It allows network administrators to create and manage virtualized network environments in a flexible and scalable manner.
 ## Overview of the full diagram below:
 ![Full diagram](img/1.png)
+
+
 ## Prerequisites:
 
 - Basic familiarity with Linux and networking concepts.
@@ -120,6 +122,8 @@ You will get output like this.
 See, you have successfully ping the Host 2(10.0.1.169). we received 5 packets result as we give in the command. You can also check from host 2 gitbash(ping 10.0.1.43 -c 5).
 
 ![ping from host 1 to host 2](img/7.png)
+
+
 So, Host 1 and Host 2 can communicate with each other, but our goal is different. We will create docker container inside two host and will ping form each other vai openvswitch bridge to connect them.
 
 ## Step 2: Install essential packages:
@@ -1091,19 +1095,27 @@ Please look up the output figure of ping command
 
 - ping from docker1 to docker3
   ![ping from docker1 to docker3-100% passed](img/16.png)
+  
 - ping from docker1 to docker1(self)
   ![ping from docker1 to docker1(self)-100% passed](img/17.png)
+  
 - ping from docker1 to docker2
   ![ping from docker1 to docker2-100% failed](img/18.png)
+  
 - ping from docker1 to docker4
   ![ping from docker1 to docker4](img/19.png)
+  
 - ping from docker2 to docker2(self)
   ![ping from docker2 to docker2(self)-100% passed](img/20.png)
+  
 - ping from docker2 to docker4
   ![ping from docker2 to docker4-100% passed](img/21.png)
+  
 - ping from docker2 to docker1
    ![ping from docker2 to docker1-100% failed](img/22.png)
+  
 - ping from docker2 to docker3
   ![ping from docker2 to docker3-100% failed](img/23.png)
+  
 
 So, this is the end of the tutorial. I hope you enjoyed this hands on demo.
