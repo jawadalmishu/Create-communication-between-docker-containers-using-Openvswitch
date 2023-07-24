@@ -115,6 +115,8 @@ ping 10.0.1.169 -c 5
 You will get output like this.
 
 ![Host 1 gitbash](img/6.png)
+
+
 See, you have successfully ping the Host 2(10.0.1.169). we received 5 packets result as we give in the command. You can also check from host 2 gitbash(ping 10.0.1.43 -c 5).
 
 ![ping from host 1 to host 2](img/7.png)
